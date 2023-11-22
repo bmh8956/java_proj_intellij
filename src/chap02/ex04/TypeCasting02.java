@@ -31,6 +31,6 @@ public class TypeCasting02 {
 
         System.out.println("평균1 : " + avg1);
         System.out.println("평균2 : " + avg2);
-        
+
     }
 }
