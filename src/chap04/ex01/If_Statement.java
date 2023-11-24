@@ -1,4 +1,4 @@
-package chap4.ex01;
+package chap04.ex01;
 
 public class If_Statement {
     public static void main(String[] args) {

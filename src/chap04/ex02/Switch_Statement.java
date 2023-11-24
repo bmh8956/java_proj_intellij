@@ -1,4 +1,4 @@
-package chap4.ex01.ex02;
+package chap04.ex02;
 
 public class Switch_Statement {
     public static void main(String[] args) {

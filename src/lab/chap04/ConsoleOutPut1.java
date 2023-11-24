@@ -1,4 +1,4 @@
-package lab;
+package lab.chap04;
 
 public class ConsoleOutPut1 {
     public static void main(String[] args) {
