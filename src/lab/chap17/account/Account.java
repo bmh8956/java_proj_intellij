@@ -14,6 +14,13 @@ public class Account {
 
 	}
 
+	public Account(String name, int account, int money, List<Account> auto) {
+		this.name = name;
+		this.account = account;
+		this.money = money;
+		this.auto = auto;
+	}
+
 	public Account(String name, int account, int money) {
 		this.name = name;
 		this.account = account;

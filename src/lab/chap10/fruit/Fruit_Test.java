@@ -1,13 +1,15 @@
 package lab.chap10.fruit;
 
+import common.Common;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Fruit_Test {
 	public static void main(String[] args) throws IllegalAccessException, InstantiationException {
 		Fruit ap = new Apple("사과", 30, 5000);
-		Fruit ba = new Apple("바나나", 44, 6000);
-		Fruit st = new Apple("딸기", 55, 7000);
+		Fruit ba = new Banana("바나나", 44, 6000);
+		Fruit st = new Strawberry("딸기", 55, 7000);
 
 		List<Fruit> li = new ArrayList<>();
 		li.add(ap);
@@ -19,14 +21,15 @@ public class Fruit_Test {
 //		}
 
 		List<Object> ls = new ArrayList<>();
-		ls = Fruit.auto2(4, ap, 5, 100);
-		ls = Fruit.auto2(5, ba, 6, 200);
+		List<Fruit> ll = new ArrayList<>();
+		ls = Common.autoObject(4, ap, 5, 100);
+		ls = Common.autoObject(5, ba, 6, 200);
 		for(Object ob : ls) {
+			ll.add((Fruit) ob);
 			System.out.println(ob);
 		}
-
-//		Fruit.auto(ap);
-//		System.out.println(ap);
+		Fruit.tt(ll);
+		System.out.println(ap);
 
 
 	}

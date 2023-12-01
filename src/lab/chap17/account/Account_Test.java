@@ -1,7 +1,18 @@
 package lab.chap17.account;
 
+import common.Common;
+
+import java.util.List;
+
 public class Account_Test {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IllegalAccessException, InstantiationException {
+
+		Account a = new Account();
+		System.out.println(a);
+		List<Object> li = Common.autoObject(10, a, 5, 100);
+		for(Object k : li) {
+			System.out.println(k);
+		}
 
 //		Scanner sc = new Scanner(System.in);
 //
