@@ -8,6 +8,7 @@ public class Account {
 	private String name;
 	private int account;
 	private int money;
+	private List<Account> auto;
 
 	public Account() {
 

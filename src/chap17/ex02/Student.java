@@ -2,6 +2,7 @@ package chap17.ex02;
 public class Student {
 
 	String name;
+	int age;
 	String addr;
 	int num;
 	int kor;

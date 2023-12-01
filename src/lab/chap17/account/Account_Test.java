@@ -1,47 +1,43 @@
 package lab.chap17.account;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 public class Account_Test {
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
-
-		List<Account> aList = new ArrayList<>();
-		Account.create(10, aList);
-		int sel;
-		Account a = aList.get(0);
-		out:
-		do {
-			System.out.println("=====================================================");
-			System.out.println("0.계좌 정보  |  1.입금  |  2.출금  |  3.종료");
-			System.out.println("=====================================================");
-			sel = sc.nextInt();
-
-			switch (sel) {
-				case 0:
-					System.out.println(a.toString());
-					break ;
-				case 1:
-					System.out.println("입금하려는 금액을 입력해주세요");
-					int de = sc.nextInt();
-					a.deposit(de);
-					break;
-				case 2:
-					System.out.println("출금하려는 금액을 입력해주세요");
-					int wi = sc.nextInt();
-					a.withdraw(wi);
-					break;
-				case 3:
-
-					break out;
-			}
-
-		} while (true);
-		System.out.println("프로그램 종료");
-		sc.close();
+//		Scanner sc = new Scanner(System.in);
+//
+//		List<Account> aList = new ArrayList<>();
+//		Account.create(10, aList);
+//		int sel;
+//		Account a = aList.get(0);
+//		out:
+//		do {
+//			System.out.println("=====================================================");
+//			System.out.println("0.계좌 정보  |  1.입금  |  2.출금  |  3.종료");
+//			System.out.println("=====================================================");
+//			sel = sc.nextInt();
+//
+//			switch (sel) {
+//				case 0:
+//					System.out.println(a.toString());
+//					break ;
+//				case 1:
+//					System.out.println("입금하려는 금액을 입력해주세요");
+//					int de = sc.nextInt();
+//					a.deposit(de);
+//					break;
+//				case 2:
+//					System.out.println("출금하려는 금액을 입력해주세요");
+//					int wi = sc.nextInt();
+//					a.withdraw(wi);
+//					break;
+//				case 3:
+//
+//					break out;
+//			}
+//
+//		} while (true);
+//		System.out.println("프로그램 종료");
+//		sc.close();
 
 //		List<Account> aList1 = new ArrayList<>();
 //
