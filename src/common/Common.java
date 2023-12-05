@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class Common {
 
-	// ver1  ->  String, int만 가능
+	// ver1  ->  String, int만
 	public static List<Object> autoObject(int a, Object ob, int b, int d) throws IllegalAccessException, InstantiationException {
 		Class<?> c = ob.getClass();
 		Field[] fields = c.getDeclaredFields();
